@@ -49,5 +49,9 @@
 		<true/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
+		<key>CFBundleLocalizations</key>
+		<array>
+			<string>vi</string>
+		</array>
 	</dict>
 </plist>

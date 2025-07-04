@@ -3,6 +3,7 @@ import 'package:booking_app/screens/home/home.dart';
 import 'package:booking_app/screens/notification/notification.dart';
 import 'package:booking_app/screens/setting/setting.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -36,10 +37,19 @@ class _MainScreenState extends State<MainScreen> {
           });
         },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Trang chủ'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Tài khoản'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Thông báo'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Cài đặt'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'.tr()),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'account'.tr(),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'notification'.tr(),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'setting'.tr(),
+          ),
         ],
       ),
     );
